@@ -101,11 +101,11 @@ section img#front
 #text
 {
     position: absolute;
-    right: -799px;
+    right: -1500px;
     color: #fff;
     white-space: nowrap;
     font-size: 7.5vw;
-    z-index: 9;
+    z-index: 8;
 }
 #btn
 {
