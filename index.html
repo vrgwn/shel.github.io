@@ -6,22 +6,21 @@
   </head>
    <body>
      <header>
-       <a href="#" class="logo">LOGO</a>
+       <a href="#" class="logo">shelma</a>
        <ul>
          <li><a href="#" class="active">Home</a></li>
-         <li><a href="#">About</a></li>
-         <li><a href="#">Contact</a></li>
+         <li><a href="https://discordapp.com/users/289041918866882560">Contact</a></li>
        </ul>
      </header>
      <section>
         <img src="stars.png" id="stars">
         <img src="moon.png" id="moon">
         <img src="background.png" id="background">
-        <h2 id="text">Yellow</h2>
-        <a href="#" id="btn">Roll Me</a>
+        <h2 id="text">A Nighttime Wonder</h2>
+        <a href="#sec" id="btn">Roll Me</a>
         <img src="front.png" id="front">
      </section>
-     <div class="sec">
+     <div class="sec" id="sec">
         <h2>A Nighttime Wonder</h2>
         <p>Shelma, oh Shelma, you're a sight to behold<br>
             With a smile so pretty, it's worth more than gold<br>
@@ -63,6 +62,21 @@
         let moon = document.getElementById('moon');
         let background = document.getElementById('background');
         let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let front = document.getElementById('front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+         let value = window.scrollY;
+         stars.style.left = value * 0.25 + 'px';
+         moon.style.top = value * 1 + 'px';
+         background.style.top = value * 1 + 'px';
+         front.style.top = value * 0 + 'px';
+         text.style.marginRight = value * 4 + 'px';
+         text.style.marginTop = value * 1.5 + 'px';
+         btn.style.marginTop = value * 1.5 + 'px';
+         header.style.top = value * 1 + 'px';
+        })
      </script>
    </body>
 </html>
