@@ -122,6 +122,7 @@ transform: translateY(100px);
 .sec
 {
     position: relative;
+    text-align: center;
     padding: 100px;
     background-color: #003366;
 }
